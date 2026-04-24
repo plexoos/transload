@@ -1,0 +1,17 @@
+{
+  "name": "transload",
+  "build": {
+    "dockerfile": "../Dockerfile",
+    "context": ".."
+  },
+  "remoteEnv": {
+    "CODEX_HOME": "${containerWorkspaceFolder}/.codex"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "openai.chatgpt"
+      ]
+    }
+  }
+}
